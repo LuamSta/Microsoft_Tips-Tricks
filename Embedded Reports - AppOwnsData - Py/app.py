@@ -28,8 +28,8 @@ def get_embed_info():
         embed_info = PbiEmbedService().get_embed_params_for_single_report(
             app.config['WORKSPACE_ID']
             ,app.config['REPORT_ID']
-            ,username="R&D"
-            ,roles=["RLS"]
+            ,username="" # RLS value.
+            ,roles=[""] # Role to apply value within. 
             )
         return embed_info
     except Exception as ex:
